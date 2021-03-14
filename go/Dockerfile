@@ -18,6 +18,5 @@ ENV PATH=$PATH:/usr/local/go/bin
 
 RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b /usr/local/go/bin v1.37.1
 
-COPY .golangci.yml .
-
 WORKDIR /root
+COPY .golangci.yml .
